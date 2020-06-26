@@ -1,95 +1,15 @@
-<!DOCTYPE html>
-<html>
+{% extends "layout.njk" %}
 
-<head>
-    <link rel="stylesheet" href="/public/styles/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap" rel="stylesheet">
-    <title>Foodfy</title>
-</head>
+{% block content %}
+    <section class="foodGrid">
+        {% for food in foods %}
+            <div class="foodContent" id="{{food.id}}">
+                <img src="{{food.image}}" alt="">
+                <h1 id="burgerH1">{{food.name}}</h1>
+                <h2 id="burgerH2">por {{food.author}}</h2>
+            </div>
+        {% endfor %}
+    </section>
 
-<body>
-
-    <div class="pageContent">
-
-        <header>
-            <a href="../../index.html"><img src="/public/assets/logo.png" alt=""></a>
-            <a href="/src/views/about.html">Sobre</a>
-            <a href="/src/views/foods.html">Receitas</a>
-        </header>
-
-        
-        <div class="foodGrid">
-            <div class="foodContent">
-                <img src="/public/assets/burger.png" alt="">
-                <h1>Triplo Bacon Burger</h1>
-                <h2>por Jorge Relato</h2>
-            </div>
-            <div class="foodContent">
-                <img src="/public/assets/pizza.png" alt="">
-                <h1>Pizza 4 Estações</h1>
-                <h2>por Fabiana Melo</h2>
-            </div>
-            <div class="foodContent">
-                <img src="/public/assets/espaguete.png" alt="">
-                <h1>Espaguete ao alho</h1>
-                <h2>por Júlia Kinoto</h2>
-            </div>
-            <div class="foodContent">
-                <img src="/public/assets/lasanha.png" alt="">
-                <h1>Lasanha Mac n' cheese</h1>
-                <h2>por Juliano Vieira</h2>
-            </div>
-            <div class="foodContent">
-                <img src="/public/assets/doce.png" alt="">
-                <h1>Docinhos pão-do-céu</h1>
-                <h2>por Ricardo Golvea</h2>
-            </div>
-            <div class="foodContent">
-                <img src="/public/assets/asinhas.png" alt="">
-                <h1>Asinhas de frango ao barbecue</h1>
-                <h2>por Vania Steroski</h2>
-            </div>
-            <div class="foodContent">
-                <img src="/public/assets/burger.png" alt="">
-                <h1>Triplo Bacon Burger</h1>
-                <h2>por Jorge Relato</h2>
-            </div>
-            <div class="foodContent">
-                <img src="/public/assets/pizza.png" alt="">
-                <h1>Pizza 4 Estações</h1>
-                <h2>por Fabiana Melo</h2>
-            </div>
-            <div class="foodContent">
-                <img src="/public/assets/espaguete.png" alt="">
-                <h1>Espaguete ao alho</h1>
-                <h2>por Júlia Kinoto</h2>
-            </div>
-            <div class="foodContent">
-                <img src="/public/assets/lasanha.png" alt="">
-                <h1>Lasanha Mac n' cheese</h1>
-                <h2>por Juliano Vieira</h2>
-            </div>
-            <div class="foodContent">
-                <img src="/public/assets/doce.png" alt="">
-                <h1>Docinhos pão-do-céu</h1>
-                <h2>por Ricardo Golvea</h2>
-            </div>
-            <div class="foodContent">
-                <img src="/public/assets/asinhas.png" alt="">
-                <h1>Asinhas de frango ao barbecue</h1>
-                <h2>por Vania Steroski</h2>
-            </div>
-
-        </div>
-
-
-        
-    </div>
-
-    <div class="footer">
-        <h2>Todos os direitos reservados - Receitas Foodfy</h2>
-    </div>
-</body>
-
-</html>
+<script src="scripts.js"></script>    
+{% endblock content %}

@@ -1,6 +1,6 @@
 module.exports = [
     {
-        id: "burger",
+        id: 1,
         image: "burger.png",
         name: "Triplo Bacon Burger",
         author: "Jorge Relato",
@@ -24,7 +24,7 @@ module.exports = [
         information: "Preaqueça a chapa, frigideira ou grelha por 10 minutos antes de levar os hambúrgueres. Adicione um pouquinho de óleo ou manteiga e não amasse os hambúrgueres! \n\n Você sabia que a receita que precede o hambúrguer surgiu no século XIII, na Europa? A ideia de moer a carne chegou em Hamburgo no século XVII, onde um açogueiro resolveu também temperá-la. Assim, a receita foi disseminada nos Estados Unidos por alemães da região. Lá surgiu a ideia de colocar o hambúrguer no meio do pão e adicionar outros ingredientes, como queijom tomates e alface."
     },
     {
-        id: "pizza",
+        id: 2,
         image: "pizza.png",
         name: "Pizza 4 Estações",
         author: "Fabiana Melo",
@@ -52,7 +52,7 @@ module.exports = [
         information: 'Pizza de liquidificador é uma receita deliciosa e supersimples de preparar. Feita toda no liquidificador, ela é bem prática para o dia a dia. Aqui no TudoGostoso você também encontra diversas delícias práticas feitas no liquidificador: massa de panqueca, torta de frango de liquidificador, pão de queijo de liquidificador, bolo de banana, bolo de chocolate e muito mais!'
     },
     {
-        id: "espaguete",
+        id: 3,
         image: "espaguete.png",
         name: "Espaguete ao alho",
         author: "Júlia Kinoto",
@@ -77,7 +77,7 @@ module.exports = [
         information: 'Não lave o macarrão nem passe óleo ou gordura nele depois de escorrê-lo. Coloque direto na frigideira.'
     },
     {
-        id: "lasanha",
+        id: 4,
         image: "lasanha.png",
         name: "Lasanha Mac n' cheese",
         author: "Juliano Vieira",
@@ -99,7 +99,7 @@ module.exports = [
 
     },
     {
-        id: "doce",
+        id: 5,
         image: "doce.png",
         name: "Docinhos pão-do-céu",
         author: "Ricardo Golves",
@@ -122,7 +122,7 @@ module.exports = [
         information: ''
     },
     {
-        id: "asinhas",
+        id: 6,
         image: "asinhas.png",
         name: "Asinhas de frango ao barbecue",
         author: "Vania Steroski",

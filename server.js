@@ -27,6 +27,17 @@ server.get("/about", function(req, res){
     return res.render("about")
 })
 
+server.get("/foods", function(req, res){
+    return res.render("foods", {foods: foods})
+})
+
+server.get("/foods/:index", function (req, res) {
+    const foodIndex = req.params.index;
+    const recipe = foods[foodIndex] 
+    
+    return res.render("foods-context", { recipe })
+})
+
 
 
 server.listen(4000, function(){
