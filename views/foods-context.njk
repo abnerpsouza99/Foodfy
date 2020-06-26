@@ -4,11 +4,14 @@
     
     <section class="food-context">
 
-        {% for food in foods %}
-             <img src="{{food.image}}" alt="">
+            <div class="food-image">
+                <img src="{{recipe.image}}" alt="">
+            </div>
+
+            
             <div class="food-info">
-                <h2>{{food.name}}</h2>
-                <h3>{{food.author}}</h3>
+                <h2>{{recipe.name}}</h2>
+                <h3>{{recipe.author}}</h3>
             </div>
 
             <div class="ingredients">
@@ -16,7 +19,7 @@
                     <h2></h2>
                     <h3></h3>
                 </div>
-                <p>{{food.ingredients}}</p>
+                <p>{{recipe.ingredients}}</p>
             </div>
 
             <div class="preparation">
@@ -24,7 +27,7 @@
                     <h2></h2>
                     <h3></h3>
                 </div>
-                <p>{{food.preparation}}</p>
+                <p>{{recipe.preparation}}</p>
             </div>
 
             <div class="information">
@@ -32,9 +35,8 @@
                     <h2></h2>
                     <h3></h3>
                 </div>
-                <p>{{food.information}}</p>
+                <p>{{recipe.information}}</p>
             </div>
-        {% endfor %}
            
 
         
