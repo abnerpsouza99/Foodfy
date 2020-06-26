@@ -1,0 +1,31 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+    <div class="homeCard">
+        <div class="textCardHome">
+            <h1>As melhores receitas</h1>
+            <h2>Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.</h2>
+        </div>
+
+        <img src="/chef.png" alt="">
+    </div>
+
+    <h1>Mais acessadas</h1>
+
+    <section class="foodGrid">
+        {% for food in foods %}
+            <div class="foodContent" id="{{food.id}}">
+                <img src="{{food.image}}" alt="">
+                <h1 id="burgerH1">{{food.name}}</h1>
+                <h2 id="burgerH2">por {{food.author}}</h2>
+            </div>
+        {% endfor %}
+
+    </section>
+
+</div>
+
+<script src="public/scripts/scripts.js"></script>
+
+{% endblock content %}
