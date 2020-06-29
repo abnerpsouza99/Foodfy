@@ -1,47 +1,42 @@
 {% extends "layout.njk" %}
 
 {% block content %}
-    
-    <section class="food-context">
+
+    <section class="food-context" id="{{food.id}}">
 
             <div class="food-image">
-                <img src="{{recipe.image}}" alt="">
+                <img src={{foods.img}} alt="">
             </div>
-
-            
             <div class="food-info">
-                <h2>{{recipe.name}}</h2>
-                <h3>{{recipe.author}}</h3>
+                <h2>{{foods.name}}</h2>
+                <h3>por {{foods.author}}</h3>
             </div>
 
             <div class="ingredients">
                 <div class="ingredients-title">
-                    <h2></h2>
-                    <h3></h3>
+                    <h2>Ingredientes</h2>
+                    <button class="hide-ingredients">Mostrar</button>
                 </div>
-                <p>{{recipe.ingredients}}</p>
+                <p class="p-ingredients">{{foods.ingredients}}</p>
             </div>
 
             <div class="preparation">
                 <div class="preparation-title">
-                    <h2></h2>
-                    <h3></h3>
+                    <h2>Modo de Preparo</h2>
+                    <button>Mostrar</button>
                 </div>
-                <p>{{recipe.preparation}}</p>
+                <p class="p-preparation">{{foods.preparation}}</p>
             </div>
 
             <div class="information">
                 <div class="information-title">
-                    <h2></h2>
-                    <h3></h3>
+                    <h2>Informações</h2>
+                    <button>Mostrar</button>
                 </div>
-                <p>{{recipe.information}}</p>
+                <p class="p-information hide">{{foods.information}}</p>
             </div>
-           
-
-        
 
     </section>
-    <script src="scripts.js"></script>    
+    <script src="scripts.js"></script>
 
 {% endblock content %}

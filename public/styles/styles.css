@@ -12,9 +12,6 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-}
-
 .pageContent {
     margin-top: 50px;
     margin-right: 300px;
@@ -135,6 +132,46 @@ header a img {
     font-size: 15px;
 }
 
-.food-context .food-image {
-    width: 800px;
+.food-context .food-image{
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    margin-bottom: 30px;
 }
+
+.food-context .food-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    margin-bottom: 30px;
+}
+
+.food-context .ingredients-title {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+
+.hide {
+    display: none;
+}
+
+button{
+    color: #999999;
+    font-size: 12px;
+    line-height: 22px;
+    border: none;
+    cursor: pointer;
+    margin-left: 20px;
+    margin-top: 30px;
+    width: 60px;
+    height: 20px;
+    background-position: center;
+    
+}
+.display{
+    display:none;
+    transition: 500ms;
+}
+
